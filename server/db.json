@@ -1,0 +1,1080 @@
+{
+  "users": [
+    {
+      "name": "pooja",
+      "email": "spa@hmail.com",
+      "password": "password",
+      "type": "Grocery / Kirana",
+      "sector": "General",
+      "location": "India",
+      "size": "Small",
+      "_id": "1766585486565iol82"
+    },
+    {
+      "name": "avani",
+      "email": "spaa24@pmail.com",
+      "password": "ppassword",
+      "type": "Textiles",
+      "sector": "General",
+      "location": "India",
+      "size": "Micro",
+      "_id": "1766742660410topck"
+    }
+  ],
+  "products": [
+    {
+      "name": "Rice (25kg Bag)",
+      "stock": 10,
+      "price": 1250,
+      "reorderLevel": 3,
+      "status": "Good",
+      "userId": "1766585486565iol82",
+      "_id": "1766585486566qzoie"
+    },
+    {
+      "name": "Sunflower Oil (1L)",
+      "stock": 30,
+      "price": 140,
+      "reorderLevel": 10,
+      "status": "Good",
+      "userId": "1766585486565iol82",
+      "_id": "1766585486567cvyzo"
+    },
+    {
+      "name": "Sugar (kg)",
+      "stock": 40,
+      "price": 45,
+      "reorderLevel": 10,
+      "status": "Good",
+      "userId": "1766585486565iol82",
+      "_id": "1766585486568z3byv"
+    },
+    {
+      "name": "Toor Dal (kg)",
+      "stock": 25,
+      "price": 110,
+      "reorderLevel": 5,
+      "status": "Good",
+      "userId": "1766585486565iol82",
+      "_id": "17665854865692jx3w"
+    },
+    {
+      "name": "Tea Powder (250g)",
+      "stock": 50,
+      "price": 90,
+      "reorderLevel": 12,
+      "status": "Good",
+      "userId": "1766585486565iol82",
+      "_id": "1766585486569k92o0"
+    },
+    {
+      "name": "Cotton Shirt",
+      "stock": 40,
+      "price": 650,
+      "reorderLevel": 10,
+      "status": "Good",
+      "userId": "1766742660410topck",
+      "_id": "1766742660412ofm5u"
+    },
+    {
+      "name": "Denim Jeans",
+      "stock": 30,
+      "price": 1200,
+      "reorderLevel": 8,
+      "status": "Good",
+      "userId": "1766742660410topck",
+      "_id": "1766742660414faucz"
+    },
+    {
+      "name": "Silk Saree",
+      "stock": 15,
+      "price": 2500,
+      "reorderLevel": 4,
+      "status": "Good",
+      "userId": "1766742660410topck",
+      "_id": "1766742660415xxg09"
+    }
+  ],
+  "transactions": [
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-26",
+      "desc": "Daily Sales - 2025-12-26",
+      "type": "Income",
+      "amount": 8694,
+      "_id": "1766740961154rorfs"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-26",
+      "desc": "Stock Refill / Utilities - 2025-12-26",
+      "type": "Expense",
+      "amount": 2526,
+      "_id": "1766740961154cjk26"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-25",
+      "desc": "Daily Sales - 2025-12-25",
+      "type": "Income",
+      "amount": 7614,
+      "_id": "17667409611555it8c"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-24",
+      "desc": "Daily Sales - 2025-12-24",
+      "type": "Income",
+      "amount": 4277,
+      "_id": "17667409611559wd9c"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-23",
+      "desc": "Daily Sales - 2025-12-23",
+      "type": "Income",
+      "amount": 6281,
+      "_id": "1766740961155rrkgm"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-23",
+      "desc": "Stock Refill / Utilities - 2025-12-23",
+      "type": "Expense",
+      "amount": 2522,
+      "_id": "1766740961155f6k0a"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-22",
+      "desc": "Daily Sales - 2025-12-22",
+      "type": "Income",
+      "amount": 7485,
+      "_id": "1766740961156eu0j5"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-21",
+      "desc": "Daily Sales - 2025-12-21",
+      "type": "Income",
+      "amount": 9873,
+      "_id": "17667409611568c5ek"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-20",
+      "desc": "Daily Sales - 2025-12-20",
+      "type": "Income",
+      "amount": 6507,
+      "_id": "1766740961156bofeu"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-20",
+      "desc": "Stock Refill / Utilities - 2025-12-20",
+      "type": "Expense",
+      "amount": 649,
+      "_id": "1766740961157prvgu"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-19",
+      "desc": "Daily Sales - 2025-12-19",
+      "type": "Income",
+      "amount": 6678,
+      "_id": "1766740961157io5b6"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-18",
+      "desc": "Daily Sales - 2025-12-18",
+      "type": "Income",
+      "amount": 3230,
+      "_id": "176674096115716cm5"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-17",
+      "desc": "Daily Sales - 2025-12-17",
+      "type": "Income",
+      "amount": 7317,
+      "_id": "1766740961158gfn4m"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-17",
+      "desc": "Stock Refill / Utilities - 2025-12-17",
+      "type": "Expense",
+      "amount": 1333,
+      "_id": "1766740961158ty2mk"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-16",
+      "desc": "Daily Sales - 2025-12-16",
+      "type": "Income",
+      "amount": 2545,
+      "_id": "1766740961159ea1bc"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-15",
+      "desc": "Daily Sales - 2025-12-15",
+      "type": "Income",
+      "amount": 8661,
+      "_id": "1766740961159b2srq"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-14",
+      "desc": "Daily Sales - 2025-12-14",
+      "type": "Income",
+      "amount": 5304,
+      "_id": "1766740961159hjoof"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-14",
+      "desc": "Stock Refill / Utilities - 2025-12-14",
+      "type": "Expense",
+      "amount": 2473,
+      "_id": "1766740961159pevxm"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-13",
+      "desc": "Daily Sales - 2025-12-13",
+      "type": "Income",
+      "amount": 5104,
+      "_id": "1766740961159c93fo"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-12",
+      "desc": "Daily Sales - 2025-12-12",
+      "type": "Income",
+      "amount": 2493,
+      "_id": "1766740961160216ik"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-11",
+      "desc": "Daily Sales - 2025-12-11",
+      "type": "Income",
+      "amount": 8891,
+      "_id": "176674096116042yxv"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-11",
+      "desc": "Stock Refill / Utilities - 2025-12-11",
+      "type": "Expense",
+      "amount": 1556,
+      "_id": "17667409611609yl1t"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-10",
+      "desc": "Daily Sales - 2025-12-10",
+      "type": "Income",
+      "amount": 7923,
+      "_id": "1766740961160iqllg"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-09",
+      "desc": "Daily Sales - 2025-12-09",
+      "type": "Income",
+      "amount": 6824,
+      "_id": "1766740961160j62c5"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-08",
+      "desc": "Daily Sales - 2025-12-08",
+      "type": "Income",
+      "amount": 7148,
+      "_id": "176674096116035k3t"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-08",
+      "desc": "Stock Refill / Utilities - 2025-12-08",
+      "type": "Expense",
+      "amount": 1372,
+      "_id": "1766740961161igluw"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-07",
+      "desc": "Daily Sales - 2025-12-07",
+      "type": "Income",
+      "amount": 6965,
+      "_id": "1766740961161gd352"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-06",
+      "desc": "Daily Sales - 2025-12-06",
+      "type": "Income",
+      "amount": 3321,
+      "_id": "1766740961161u4hl9"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-05",
+      "desc": "Daily Sales - 2025-12-05",
+      "type": "Income",
+      "amount": 4779,
+      "_id": "1766740961161nlj4s"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-05",
+      "desc": "Stock Refill / Utilities - 2025-12-05",
+      "type": "Expense",
+      "amount": 2919,
+      "_id": "1766740961161e87bp"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-04",
+      "desc": "Daily Sales - 2025-12-04",
+      "type": "Income",
+      "amount": 3955,
+      "_id": "1766740961161sdu3g"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-03",
+      "desc": "Daily Sales - 2025-12-03",
+      "type": "Income",
+      "amount": 4833,
+      "_id": "1766740961161527m9"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-02",
+      "desc": "Daily Sales - 2025-12-02",
+      "type": "Income",
+      "amount": 4123,
+      "_id": "1766740961162hmmn6"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-02",
+      "desc": "Stock Refill / Utilities - 2025-12-02",
+      "type": "Expense",
+      "amount": 1999,
+      "_id": "1766740961162t9fry"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-12-01",
+      "desc": "Daily Sales - 2025-12-01",
+      "type": "Income",
+      "amount": 7865,
+      "_id": "1766740961162x67ig"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-30",
+      "desc": "Daily Sales - 2025-11-30",
+      "type": "Income",
+      "amount": 7897,
+      "_id": "1766740961162apn80"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-29",
+      "desc": "Daily Sales - 2025-11-29",
+      "type": "Income",
+      "amount": 3101,
+      "_id": "1766740961162o96c5"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-29",
+      "desc": "Stock Refill / Utilities - 2025-11-29",
+      "type": "Expense",
+      "amount": 1621,
+      "_id": "1766740961162vyeiz"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-28",
+      "desc": "Daily Sales - 2025-11-28",
+      "type": "Income",
+      "amount": 9946,
+      "_id": "1766740961162io6vb"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-27",
+      "desc": "Daily Sales - 2025-11-27",
+      "type": "Income",
+      "amount": 3180,
+      "_id": "1766740961163ykooi"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-26",
+      "desc": "Daily Sales - 2025-11-26",
+      "type": "Income",
+      "amount": 7202,
+      "_id": "1766740961163lnx3e"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-26",
+      "desc": "Stock Refill / Utilities - 2025-11-26",
+      "type": "Expense",
+      "amount": 1512,
+      "_id": "17667409611632hoo6"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-25",
+      "desc": "Daily Sales - 2025-11-25",
+      "type": "Income",
+      "amount": 2454,
+      "_id": "1766740961163mhknz"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-24",
+      "desc": "Daily Sales - 2025-11-24",
+      "type": "Income",
+      "amount": 7642,
+      "_id": "17667409611646dqkc"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-23",
+      "desc": "Daily Sales - 2025-11-23",
+      "type": "Income",
+      "amount": 9019,
+      "_id": "1766740961164biv0s"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-23",
+      "desc": "Stock Refill / Utilities - 2025-11-23",
+      "type": "Expense",
+      "amount": 2259,
+      "_id": "1766740961164y47v1"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-22",
+      "desc": "Daily Sales - 2025-11-22",
+      "type": "Income",
+      "amount": 4219,
+      "_id": "1766740961164wu85j"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-21",
+      "desc": "Daily Sales - 2025-11-21",
+      "type": "Income",
+      "amount": 8277,
+      "_id": "1766740961165psw24"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-20",
+      "desc": "Daily Sales - 2025-11-20",
+      "type": "Income",
+      "amount": 3165,
+      "_id": "17667409611659snli"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-20",
+      "desc": "Stock Refill / Utilities - 2025-11-20",
+      "type": "Expense",
+      "amount": 1637,
+      "_id": "1766740961165ewuku"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-19",
+      "desc": "Daily Sales - 2025-11-19",
+      "type": "Income",
+      "amount": 4811,
+      "_id": "1766740961166jgq27"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-18",
+      "desc": "Daily Sales - 2025-11-18",
+      "type": "Income",
+      "amount": 4644,
+      "_id": "1766740961166prfkq"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-17",
+      "desc": "Daily Sales - 2025-11-17",
+      "type": "Income",
+      "amount": 9429,
+      "_id": "1766740961166m0xgd"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-17",
+      "desc": "Stock Refill / Utilities - 2025-11-17",
+      "type": "Expense",
+      "amount": 2358,
+      "_id": "1766740961166esrfl"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-16",
+      "desc": "Daily Sales - 2025-11-16",
+      "type": "Income",
+      "amount": 8749,
+      "_id": "1766740961167z1bbi"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-15",
+      "desc": "Daily Sales - 2025-11-15",
+      "type": "Income",
+      "amount": 2871,
+      "_id": "1766740961167idlev"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-14",
+      "desc": "Daily Sales - 2025-11-14",
+      "type": "Income",
+      "amount": 7316,
+      "_id": "17667409611677sdxi"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-14",
+      "desc": "Stock Refill / Utilities - 2025-11-14",
+      "type": "Expense",
+      "amount": 1503,
+      "_id": "1766740961167rqx8u"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-13",
+      "desc": "Daily Sales - 2025-11-13",
+      "type": "Income",
+      "amount": 9492,
+      "_id": "1766740961168r6dqr"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-12",
+      "desc": "Daily Sales - 2025-11-12",
+      "type": "Income",
+      "amount": 4703,
+      "_id": "17667409611686r33d"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-11",
+      "desc": "Daily Sales - 2025-11-11",
+      "type": "Income",
+      "amount": 4773,
+      "_id": "1766740961168wk6ct"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-11",
+      "desc": "Stock Refill / Utilities - 2025-11-11",
+      "type": "Expense",
+      "amount": 1101,
+      "_id": "1766740961169e3ub9"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-10",
+      "desc": "Daily Sales - 2025-11-10",
+      "type": "Income",
+      "amount": 4042,
+      "_id": "17667409611704madl"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-09",
+      "desc": "Daily Sales - 2025-11-09",
+      "type": "Income",
+      "amount": 2852,
+      "_id": "1766740961170raxww"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-08",
+      "desc": "Daily Sales - 2025-11-08",
+      "type": "Income",
+      "amount": 2382,
+      "_id": "1766740961171cnhyy"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-08",
+      "desc": "Stock Refill / Utilities - 2025-11-08",
+      "type": "Expense",
+      "amount": 2405,
+      "_id": "1766740961171ahcgq"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-07",
+      "desc": "Daily Sales - 2025-11-07",
+      "type": "Income",
+      "amount": 9565,
+      "_id": "1766740961171zggdf"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-06",
+      "desc": "Daily Sales - 2025-11-06",
+      "type": "Income",
+      "amount": 8053,
+      "_id": "1766740961172iwg69"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-05",
+      "desc": "Daily Sales - 2025-11-05",
+      "type": "Income",
+      "amount": 8103,
+      "_id": "1766740961172x1fr5"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-05",
+      "desc": "Stock Refill / Utilities - 2025-11-05",
+      "type": "Expense",
+      "amount": 1326,
+      "_id": "1766740961172mu3pu"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-04",
+      "desc": "Daily Sales - 2025-11-04",
+      "type": "Income",
+      "amount": 4540,
+      "_id": "1766740961172tpxoo"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-03",
+      "desc": "Daily Sales - 2025-11-03",
+      "type": "Income",
+      "amount": 6339,
+      "_id": "1766740961173ouenq"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-02",
+      "desc": "Daily Sales - 2025-11-02",
+      "type": "Income",
+      "amount": 5140,
+      "_id": "17667409611730dm7p"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-02",
+      "desc": "Stock Refill / Utilities - 2025-11-02",
+      "type": "Expense",
+      "amount": 1837,
+      "_id": "1766740961173uid2a"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-11-01",
+      "desc": "Daily Sales - 2025-11-01",
+      "type": "Income",
+      "amount": 9194,
+      "_id": "1766740961174y67g9"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-31",
+      "desc": "Daily Sales - 2025-10-31",
+      "type": "Income",
+      "amount": 6993,
+      "_id": "1766740961174z28o0"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-30",
+      "desc": "Daily Sales - 2025-10-30",
+      "type": "Income",
+      "amount": 9456,
+      "_id": "1766740961174l3nfx"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-30",
+      "desc": "Stock Refill / Utilities - 2025-10-30",
+      "type": "Expense",
+      "amount": 1925,
+      "_id": "17667409611741vh5p"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-29",
+      "desc": "Daily Sales - 2025-10-29",
+      "type": "Income",
+      "amount": 8108,
+      "_id": "1766740961175qltha"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-28",
+      "desc": "Daily Sales - 2025-10-28",
+      "type": "Income",
+      "amount": 2937,
+      "_id": "1766740961176r4gzf"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-27",
+      "desc": "Daily Sales - 2025-10-27",
+      "type": "Income",
+      "amount": 6533,
+      "_id": "1766740961176t5qzd"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-27",
+      "desc": "Stock Refill / Utilities - 2025-10-27",
+      "type": "Expense",
+      "amount": 2467,
+      "_id": "1766740961177zxo76"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-26",
+      "desc": "Daily Sales - 2025-10-26",
+      "type": "Income",
+      "amount": 4565,
+      "_id": "1766740961177s1i7t"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-25",
+      "desc": "Daily Sales - 2025-10-25",
+      "type": "Income",
+      "amount": 4602,
+      "_id": "17667409611786q3q3"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-24",
+      "desc": "Daily Sales - 2025-10-24",
+      "type": "Income",
+      "amount": 2725,
+      "_id": "1766740961178uau85"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-24",
+      "desc": "Stock Refill / Utilities - 2025-10-24",
+      "type": "Expense",
+      "amount": 2607,
+      "_id": "1766740961178mb1aa"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-23",
+      "desc": "Daily Sales - 2025-10-23",
+      "type": "Income",
+      "amount": 7002,
+      "_id": "1766740961178d7i3o"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-22",
+      "desc": "Daily Sales - 2025-10-22",
+      "type": "Income",
+      "amount": 9918,
+      "_id": "1766740961179kwskg"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-21",
+      "desc": "Daily Sales - 2025-10-21",
+      "type": "Income",
+      "amount": 3167,
+      "_id": "1766740961179mllz5"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-21",
+      "desc": "Stock Refill / Utilities - 2025-10-21",
+      "type": "Expense",
+      "amount": 1157,
+      "_id": "1766740961179heml7"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-20",
+      "desc": "Daily Sales - 2025-10-20",
+      "type": "Income",
+      "amount": 3041,
+      "_id": "1766740961179n52l8"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-19",
+      "desc": "Daily Sales - 2025-10-19",
+      "type": "Income",
+      "amount": 2342,
+      "_id": "1766740961180d3yvl"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-18",
+      "desc": "Daily Sales - 2025-10-18",
+      "type": "Income",
+      "amount": 9405,
+      "_id": "1766740961180sudm9"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-18",
+      "desc": "Stock Refill / Utilities - 2025-10-18",
+      "type": "Expense",
+      "amount": 2277,
+      "_id": "1766740961181mgj1n"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-17",
+      "desc": "Daily Sales - 2025-10-17",
+      "type": "Income",
+      "amount": 4742,
+      "_id": "1766740961181l7z0v"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-16",
+      "desc": "Daily Sales - 2025-10-16",
+      "type": "Income",
+      "amount": 2415,
+      "_id": "1766740961181vtkpi"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-15",
+      "desc": "Daily Sales - 2025-10-15",
+      "type": "Income",
+      "amount": 8438,
+      "_id": "1766740961182s989u"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-15",
+      "desc": "Stock Refill / Utilities - 2025-10-15",
+      "type": "Expense",
+      "amount": 2691,
+      "_id": "17667409611826oi9r"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-14",
+      "desc": "Daily Sales - 2025-10-14",
+      "type": "Income",
+      "amount": 7883,
+      "_id": "1766740961182ewlf9"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-13",
+      "desc": "Daily Sales - 2025-10-13",
+      "type": "Income",
+      "amount": 3529,
+      "_id": "1766740961183v3uju"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-12",
+      "desc": "Daily Sales - 2025-10-12",
+      "type": "Income",
+      "amount": 7365,
+      "_id": "1766740961183jmccj"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-12",
+      "desc": "Stock Refill / Utilities - 2025-10-12",
+      "type": "Expense",
+      "amount": 1190,
+      "_id": "17667409611837dw8c"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-11",
+      "desc": "Daily Sales - 2025-10-11",
+      "type": "Income",
+      "amount": 4343,
+      "_id": "1766740961184ucnvg"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-10",
+      "desc": "Daily Sales - 2025-10-10",
+      "type": "Income",
+      "amount": 6715,
+      "_id": "17667409611849q237"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-09",
+      "desc": "Daily Sales - 2025-10-09",
+      "type": "Income",
+      "amount": 7892,
+      "_id": "1766740961184sa358"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-09",
+      "desc": "Stock Refill / Utilities - 2025-10-09",
+      "type": "Expense",
+      "amount": 2319,
+      "_id": "1766740961184c9tcs"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-08",
+      "desc": "Daily Sales - 2025-10-08",
+      "type": "Income",
+      "amount": 5688,
+      "_id": "17667409611854rgwz"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-07",
+      "desc": "Daily Sales - 2025-10-07",
+      "type": "Income",
+      "amount": 3221,
+      "_id": "1766740961185biwjp"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-06",
+      "desc": "Daily Sales - 2025-10-06",
+      "type": "Income",
+      "amount": 7807,
+      "_id": "1766740961185yztrt"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-06",
+      "desc": "Stock Refill / Utilities - 2025-10-06",
+      "type": "Expense",
+      "amount": 1129,
+      "_id": "1766740961185l8krg"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-05",
+      "desc": "Daily Sales - 2025-10-05",
+      "type": "Income",
+      "amount": 8376,
+      "_id": "1766740961186mghdd"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-04",
+      "desc": "Daily Sales - 2025-10-04",
+      "type": "Income",
+      "amount": 3062,
+      "_id": "1766740961186j84r0"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-03",
+      "desc": "Daily Sales - 2025-10-03",
+      "type": "Income",
+      "amount": 4492,
+      "_id": "1766740961186w37xl"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-03",
+      "desc": "Stock Refill / Utilities - 2025-10-03",
+      "type": "Expense",
+      "amount": 1537,
+      "_id": "1766740961186lwi26"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-02",
+      "desc": "Daily Sales - 2025-10-02",
+      "type": "Income",
+      "amount": 6917,
+      "_id": "1766740961187d6l7y"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-10-01",
+      "desc": "Daily Sales - 2025-10-01",
+      "type": "Income",
+      "amount": 4570,
+      "_id": "1766740961187cii18"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-09-30",
+      "desc": "Daily Sales - 2025-09-30",
+      "type": "Income",
+      "amount": 8358,
+      "_id": "17667409611872jtuu"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-09-30",
+      "desc": "Stock Refill / Utilities - 2025-09-30",
+      "type": "Expense",
+      "amount": 2857,
+      "_id": "1766740961187nk5p5"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-09-29",
+      "desc": "Daily Sales - 2025-09-29",
+      "type": "Income",
+      "amount": 2550,
+      "_id": "1766740961188cmn7j"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "date": "2025-09-28",
+      "desc": "Daily Sales - 2025-09-28",
+      "type": "Income",
+      "amount": 3478,
+      "_id": "1766740961188zdgkg"
+    }
+  ],
+  "ads": [
+    {
+      "userId": "1766585486565iol82",
+      "businessName": "pooja",
+      "offer": "5% OFF on sarees",
+      "posterTheme": "default",
+      "timestamp": "2025-12-25T11:23:16.530Z",
+      "_id": "17666617965306ru8k"
+    },
+    {
+      "userId": "1766585486565iol82",
+      "businessName": "pooja",
+      "offer": "3% OFF on brown rice",
+      "posterTheme": "default",
+      "offerBasis": "General",
+      "businessType": "General",
+      "timestamp": "2025-12-26T09:25:47.010Z",
+      "_id": "17667411470109ture"
+    }
+  ]
+}
