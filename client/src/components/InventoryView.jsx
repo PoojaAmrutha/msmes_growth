@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Plus, X } from 'lucide-react';
+
+import { Plus, X, Zap, Camera } from 'lucide-react';
 
 const InventoryView = () => {
     const [products, setProducts] = useState([]);
@@ -9,6 +10,67 @@ const InventoryView = () => {
 
     // New Product Form
     const [newProd, setNewProd] = useState({ name: '', stock: '', price: '', reorderLevel: '' });
+
+    // AI Pricing State
+    const [aiResult, setAiResult] = useState(null);
+    const [showAiModal, setShowAiModal] = useState(false);
+    const [analyzingProd, setAnalyzingProd] = useState(null);
+
+    const handleGetSmartPrice = async (product) => {
+        setAnalyzingProd(product._id);
+        try {
+            // Mock competition data for demo (in real app, this would come from a scraper)
+            const mockCompetitorPrice = product.price * (0.9 + Math.random() * 0.2); // Random +-10%
+
+            const res = await fetch('http://localhost:5000/api/ai/pricing/optimize', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    product_name: product.name,
+                    base_price: product.price,
+                    current_stock: product.stock,
+                    days_to_expiry: 30, // Defaulting for demo
+                    competitor_price: mockCompetitorPrice
+                })
+            });
+            const data = await res.json();
+            setAiResult({ ...data, product: product.name, currentPrice: product.price });
+            setShowAiModal(true);
+        } catch (err) {
+            console.error(err);
+            alert("Failed to connect to AI Brain");
+        } finally {
+            setAnalyzingProd(null);
+        }
+    };
+
+    // Vision / Shelf Scanner State
+    const [showVisionModal, setShowVisionModal] = useState(false);
+    const [visionResult, setVisionResult] = useState(null);
+    const [visionLoading, setVisionLoading] = useState(false);
+
+    const handleVisionUpload = async (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        setVisionLoading(true);
+        const formData = new FormData();
+        formData.append('image', file);
+
+        try {
+            const res = await fetch('http://localhost:5000/api/ai/vision/analyze', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await res.json();
+            setVisionResult({ ...data, imageUrl: URL.createObjectURL(file) });
+        } catch (err) {
+            console.error(err);
+            alert("Vision Analysis Failed");
+        } finally {
+            setVisionLoading(false);
+        }
+    };
 
     const fetchProducts = () => {
         fetch(`http://localhost:5000/api/inventory/${userId}`)
@@ -102,9 +164,14 @@ const InventoryView = () => {
         <div className="view-container">
             <div className="header-row" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <h2>Inventory Management</h2>
-                <button className="primary-btn" style={{ width: 'auto' }} onClick={() => setShowModal(true)}>
-                    <Plus size={18} style={{ marginRight: 5 }} /> Add Product
-                </button>
+                <div style={{ display: 'flex', gap: '10px' }}>
+                    <button className="primary-btn" style={{ width: 'auto', background: '#0ea5e9' }} onClick={() => setShowVisionModal(true)}>
+                        <Camera size={18} style={{ marginRight: 5 }} /> Scan Shelf (AI)
+                    </button>
+                    <button className="primary-btn" style={{ width: 'auto' }} onClick={() => setShowModal(true)}>
+                        <Plus size={18} style={{ marginRight: 5 }} /> Add Product
+                    </button>
+                </div>
             </div>
 
             <div className="inventory-table-container">
@@ -143,6 +210,14 @@ const InventoryView = () => {
                                     </td>
                                     <td>
                                         <button className="action-btn" onClick={() => handleRestock(p._id)}>Restock</button>
+                                        <button
+                                            className="action-btn ai-btn"
+                                            style={{ marginLeft: '5px', background: '#7c3aed', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
+                                            onClick={() => handleGetSmartPrice(p)}
+                                            disabled={analyzingProd === p._id}
+                                        >
+                                            <Zap size={12} /> {analyzingProd === p._id ? 'Thinking...' : 'Smart Price'}
+                                        </button>
                                     </td>
                                 </tr>
                             );
@@ -181,6 +256,40 @@ const InventoryView = () => {
                 </div>
             )}
 
+            {showAiModal && aiResult && (
+                <div className="modal-overlay">
+                    <div className="modal-card" style={{ maxWidth: '400px', borderTop: '4px solid #7c3aed' }}>
+                        <div className="modal-header">
+                            <h3 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                <Zap size={20} color="#7c3aed" fill="#7c3aed" />
+                                AI Pricing Suggestion
+                            </h3>
+                            <X style={{ cursor: 'pointer' }} onClick={() => setShowAiModal(false)} />
+                        </div>
+                        <div className="ai-content" style={{ marginTop: '1rem' }}>
+                            <p style={{ color: '#64748b', fontSize: '0.9rem' }}>Analyzing market data for <strong>{aiResult.product}</strong>...</p>
+
+                            <div className="price-box" style={{ background: '#f5f3ff', padding: '1rem', borderRadius: '8px', margin: '1rem 0', textAlign: 'center' }}>
+                                <div style={{ fontSize: '0.9rem', color: '#6b7280' }}>Optimal Price</div>
+                                <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#7c3aed' }}>₹{aiResult.suggested_price}</div>
+                                <div style={{ fontSize: '0.8rem', color: aiResult.multiplier > 1 ? '#059669' : '#dc2626' }}>
+                                    {aiResult.multiplier > 1 ? '▲ Premium applied' : '▼ Discount applied'}
+                                </div>
+                            </div>
+
+                            <div className="explanation">
+                                <strong>Why?</strong>
+                                <p style={{ fontSize: '0.9rem', color: '#4b5563', marginTop: '0.25rem' }}>{aiResult.explanation}</p>
+                            </div>
+
+                            <button className="primary-btn" style={{ width: '100%', marginTop: '1.5rem', background: '#7c3aed' }} onClick={() => setShowAiModal(false)}>
+                                Apply This Price
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
+
             <div className="inventory-extras" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginTop: '2rem' }}>
                 <div className="alerts-section">
                     <h3 style={{ color: '#dc2626' }}>🔥 High Demand Alerts (Market)</h3>
@@ -212,6 +321,64 @@ const InventoryView = () => {
                     </ul>
                 </div>
             </div>
+
+            {showVisionModal && (
+                <div className="modal-overlay">
+                    <div className="modal-card" style={{ maxWidth: '600px' }}>
+                        <div className="modal-header">
+                            <h3><Camera size={20} style={{ marginRight: 8 }} /> Shelf Intelligence</h3>
+                            <X style={{ cursor: 'pointer' }} onClick={() => setShowVisionModal(false)} />
+                        </div>
+
+                        {!visionResult ? (
+                            <div style={{ textAlign: 'center', padding: '2rem', border: '2px dashed #cbd5e1', borderRadius: '8px' }}>
+                                {visionLoading ? (
+                                    <div className="loading">Processing Image with Computer Vision...</div>
+                                ) : (
+                                    <>
+                                        <p>Upload a photo of your shop shelf to automatically count stock and detect gaps.</p>
+                                        <input type="file" accept="image/*" onChange={handleVisionUpload} style={{ marginTop: '1rem' }} />
+                                    </>
+                                )}
+                            </div>
+                        ) : (
+                            <div className="vision-results" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                                <div>
+                                    <img src={visionResult.imageUrl} alt="Shelf Analysis" style={{ width: '100%', borderRadius: '8px', border: '1px solid #e2e8f0' }} />
+                                    <div style={{ marginTop: '0.5rem', fontSize: '0.85rem', color: '#64748b' }}>
+                                        AI Confidence: 94%
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>Analysis Report</h4>
+
+                                    <div className="stat-row" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+                                        <span>Total Items:</span>
+                                        <strong>{visionResult.total_items}</strong>
+                                    </div>
+                                    <div className="stat-row" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+                                        <span>Shelf Health:</span>
+                                        <span className={`tag ${visionResult.shelf_health === 'Good' ? 'good' : 'critical'}`}>
+                                            {visionResult.shelf_health}
+                                        </span>
+                                    </div>
+
+                                    <h5>Detected Products:</h5>
+                                    <ul style={{ paddingLeft: '1.2rem', marginBottom: '1rem' }}>
+                                        {Object.entries(visionResult.item_counts || {}).map(([name, count]) => (
+                                            <li key={name}>{name}: <strong>{count}</strong></li>
+                                        ))}
+                                    </ul>
+
+                                    <button className="primary-btn" onClick={() => { setVisionResult(null); }}>
+                                        Scan Another
+                                    </button>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            )}
 
             <style>{`
                 .alert-list, .supplier-list { list-style: none; padding: 0; }

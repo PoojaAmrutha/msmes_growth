@@ -29,6 +29,7 @@ app.use('/api/schemes', require('./routes/schemes'));
 app.use('/api/inventory', require('./routes/inventory'));
 app.use('/api/finance', require('./routes/finance'));
 app.use('/api/marketing', require('./routes/marketing'));
+app.use('/api/ai', require('./routes/ai'));
 
 app.get('/', (req, res) => {
     res.send('MSME Business Intelligence Dashboard API is running (Mock Mode)');
